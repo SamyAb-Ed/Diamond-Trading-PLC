@@ -1,83 +1,249 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import "./App.css";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Skills from "./pages/Skills/Skills";
-import Services from "./pages/Services/Services";
-import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
-import ChatBox from "./components/ChatBox/ChatBox";
+// File: src/App.jsx
+import React from "react";
 
-function App() {
-  const [activeSection, setActiveSection] = useState("home");
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setActiveSection(sectionId);
-    }
-  };
-
+const App = () => {
   return (
-    <div className="App">
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="nav-container">
-          <motion.div
-            className="logo"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h1>Samuel Worku</h1>
-          </motion.div>
-
-          <div className="nav-menu">
-            {["home", "about", "skills", "services", "projects", "contact"].map(
-              (section) => (
-                <button
-                  key={section}
-                  onClick={() => scrollToSection(section)}
-                  className={`nav-link ${
-                    activeSection === section ? "active" : ""
-                  }`}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </button>
-              )
-            )}
+    <div className="font-sans text-gray-800 scroll-smooth">
+      {/* Navbar */}
+      <nav className="fixed top-0 w-full bg-white shadow-md z-50">
+        <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
+          <h1 className="text-2xl font-bold text-blue-700">
+            Diamond Trading PLC
+          </h1>
+          <div className="hidden md:flex space-x-6 text-sm font-medium">
+            <a href="#about" className="hover:text-blue-600">
+              About
+            </a>
+            <a href="#vision" className="hover:text-blue-600">
+              Vision
+            </a>
+            <a href="#mission" className="hover:text-blue-600">
+              Mission
+            </a>
+            <a href="#values" className="hover:text-blue-600">
+              Values
+            </a>
+            <a href="#services" className="hover:text-blue-600">
+              Services
+            </a>
+            <a href="#contact" className="hover:text-blue-600">
+              Contact
+            </a>
           </div>
         </div>
       </nav>
 
-      {/* Main Content */}
-      <main>
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-600 to-blue-800 h-screen flex items-center justify-center text-center text-white">
+        <div className="p-8 rounded-xl max-w-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Building Ethiopia's Future
+          </h2>
+          <p className="text-lg">
+            Delivering sustainable construction materials and engineering
+            solutions with integrity and quality.
+          </p>
+        </div>
+      </section>
 
-      {/* AI Assistant ChatBox */}
-      <ChatBox />
+      {/* About Section */}
+      <section
+        id="about"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-gray-50"
+      >
+        <div className="max-w-4xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+            About Us
+          </h2>
+          <p className="leading-relaxed mb-6 text-lg md:text-xl text-gray-700">
+            Diamond Trading PLC is a locally owned and registered Ethiopian
+            company dedicated to providing high-quality construction materials
+            and professional services to organizations and individuals across
+            the country. Established under the laws of the Addis Ababa City
+            Administration Trade Bureau, the company operates in full compliance
+            with Ethiopian commercial regulations and holds a valid business
+            license and Tax Identification Number (TIN).
+          </p>
+          <p className="leading-relaxed text-lg md:text-xl text-gray-700">
+            We are deeply committed to fulfilling our social responsibilities
+            and contributing positively to the communities where we live and
+            work. Our goal is to become a trusted partner in Ethiopia's
+            infrastructure and development sector by supplying durable,
+            affordable, and sustainable construction materials.
+          </p>
+        </div>
+      </section>
+
+      {/* Vision Section */}
+      <section
+        id="vision"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-blue-100"
+      >
+        <div className="max-w-4xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+            Our Vision
+          </h2>
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl text-gray-800">
+            To be a leading local supplier of high-quality building and
+            construction materials that stabilize and strengthen the local
+            market while meeting the growing demand of Ethiopia's construction
+            industry.
+          </p>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section
+        id="mission"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-white"
+      >
+        <div className="max-w-4xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+            Our Mission
+          </h2>
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl text-gray-800">
+            To operate as a national engineering and construction company that
+            delivers efficient, affordable, sustainable, and cost-effective
+            materials and services of the highest quality—supporting the
+            development of modern, durable, and resilient infrastructure
+            throughout Ethiopia.
+          </p>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section
+        id="values"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-gray-100"
+      >
+        <div className="max-w-4xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+            Our Values
+          </h2>
+          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl text-gray-800">
+            <li>
+              <strong>Professionalism:</strong> Upholding the highest standards
+              in all our services and interactions.
+            </li>
+            <li>
+              <strong>Integrity:</strong> Building trust through transparency,
+              accountability, and ethical practices.
+            </li>
+            <li>
+              <strong>Creativity:</strong> Encouraging innovative solutions that
+              meet evolving market demands.
+            </li>
+            <li>
+              <strong>Commitment to Quality:</strong> Delivering materials and
+              services that exceed expectations.
+            </li>
+            <li>
+              <strong>Customer Focus:</strong> Ensuring timely delivery, clear
+              communication, and complete client satisfaction.
+            </li>
+            <li>
+              <strong>Sustainability:</strong> Promoting environmentally
+              responsible and socially beneficial practices.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section
+        id="services"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-blue-50"
+      >
+        <div className="max-w-4xl w-full">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+            Our Services & Clients
+          </h2>
+          <p className="mb-6 text-lg md:text-xl leading-relaxed text-gray-800">
+            We supply a wide range of engineering and construction materials to
+            meet the needs of diverse sectors, including:
+          </p>
+          <ul className="list-disc list-inside space-y-3 text-lg md:text-xl mb-6 text-gray-800">
+            <li>Road construction companies and local enterprises</li>
+            <li>Women-owned associations and community organizations</li>
+            <li>Civil societies supporting children and the elderly</li>
+            <li>Water pipeline and infrastructure installation companies</li>
+            <li>Public works agencies and government projects</li>
+            <li>Residential and commercial real estate developers</li>
+            <li>Hard-to-reach and priority development areas</li>
+          </ul>
+          <p className="text-lg md:text-xl leading-relaxed text-gray-800">
+            Our company is dedicated to delivering not only quality products but
+            also expert technical support, ensuring our clients achieve
+            cost-effective and successful project outcomes.
+          </p>
+        </div>
+      </section>
+
+      {/* Commitment Section */}
+      <section id="commitment" className="py-16 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-blue-700 mb-6">
+          Our Commitment
+        </h2>
+        <p className="leading-relaxed text-lg mb-4">
+          We believe that successful projects start with strong partnerships.
+          Diamond Trading PLC works closely with clients to interpret their
+          visions, translate them into practical designs, and deliver
+          construction solutions that bring their goals to life.
+        </p>
+        <p className="leading-relaxed text-lg">
+          Through open communication, transparency, and careful project
+          management, we ensure that every stage—from planning to
+          completion—remains on schedule, within budget, and aligned with our
+          clients’ expectations.
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-blue-700"
+      >
+        <div className="max-w-4xl w-full text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            Contact Information
+          </h2>
+          <div className="space-y-4 text-lg md:text-xl">
+            <p>Diamond Trading PLC</p>
+            <p>Addis Ababa, Ethiopia</p>
+            <p>📞 Phone: +251912163649</p>
+            <p>
+              📧 Email:{" "}
+              <a
+                href="mailto:diamondtradingplc@gmail.com"
+                className="underline hover:text-blue-200"
+              >
+                diamondtradingplc@gmail.com
+              </a>
+            </p>
+            <p>
+              🌐 Website:{" "}
+              <a
+                href="https://diamondtradingplc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-200"
+              >
+                https://diamondtradingplc.com
+              </a>
+            </p>
+            <p>TIN: 0086899384</p>
+            <p>Business License No.: LD/AA/14/669/4679818/2016</p>
+            <p>Registration No.: LD/AA/2/0011289/2016</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-6 text-center text-sm">
+        © {new Date().getFullYear()} Diamond Trading PLC. All Rights Reserved.
+      </footer>
     </div>
   );
-}
+};
 
 export default App;

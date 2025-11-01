@@ -1,8 +1,0 @@
-# Profile Image Placeholder
-
-Please replace this file with your actual profile image named "profile.jpg"
-
-Recommended specifications:
-- Size: 400x400px or larger
-- Format: JPG, PNG, or WebP
-- Square aspect ratio works best for the About section
