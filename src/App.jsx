@@ -35,12 +35,32 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 h-screen flex items-center justify-center text-center text-white">
-        <div className="p-8 rounded-xl max-w-2xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
+      <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        {/* Primary Background - Factory Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/dangotecement2.jpg')",
+          }}
+        ></div>
+
+        {/* Secondary Overlay - Cement Bag Image with Blend */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
+          style={{
+            backgroundImage: "url('/dangotecement.png')",
+          }}
+        ></div>
+
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/60 to-blue-900/70"></div>
+
+        {/* Content */}
+        <div className="relative z-10 p-8 rounded-xl max-w-4xl mx-auto">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
             Building Ethiopia's Future
           </h2>
-          <p className="text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+          <p className="text-xl md:text-2xl font-semibold drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] max-w-3xl mx-auto">
             Delivering sustainable construction materials and engineering
             solutions with integrity and quality.
           </p>
