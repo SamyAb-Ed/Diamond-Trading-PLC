@@ -1,5 +1,6 @@
 // File: src/App.jsx
 import React from "react";
+import ChatAssistant from "./components/ChatAssistant";
 
 const App = () => {
   return (
@@ -268,6 +269,9 @@ const App = () => {
       <footer className="bg-gray-900 text-gray-300 py-6 text-center text-sm">
         © {new Date().getFullYear()} Diamond Trading PLC. All Rights Reserved.
       </footer>
+
+      {/* AI Chat Assistant */}
+      <ChatAssistant />
     </div>
   );
 };
