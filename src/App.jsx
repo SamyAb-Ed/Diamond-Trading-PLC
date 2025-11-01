@@ -36,10 +36,10 @@ const App = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 h-screen flex items-center justify-center text-center text-white">
         <div className="p-8 rounded-xl max-w-2xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
             Building Ethiopia's Future
           </h2>
-          <p className="text-lg">
+          <p className="text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
             Delivering sustainable construction materials and engineering
             solutions with integrity and quality.
           </p>
@@ -54,12 +54,12 @@ const App = () => {
           backgroundImage: "url('/10001.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             About Us
           </h2>
-          <p className="leading-relaxed mb-6 text-lg md:text-xl drop-shadow-md">
+          <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Diamond Trading PLC is a locally owned and registered Ethiopian
             company dedicated to providing high-quality construction materials
             and professional services to organizations and individuals across
@@ -68,7 +68,7 @@ const App = () => {
             with Ethiopian commercial regulations and holds a valid business
             license and Tax Identification Number (TIN).
           </p>
-          <p className="leading-relaxed text-lg md:text-xl drop-shadow-md">
+          <p className="leading-relaxed text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             We are deeply committed to fulfilling our social responsibilities
             and contributing positively to the communities where we live and
             work. Our goal is to become a trusted partner in Ethiopia's
@@ -86,12 +86,12 @@ const App = () => {
           backgroundImage: "url('/10002.png')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Vision
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl drop-shadow-md">
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             To be a leading local supplier of high-quality building and
             construction materials that stabilize and strengthen the local
             market while meeting the growing demand of Ethiopia's construction
@@ -108,12 +108,12 @@ const App = () => {
           backgroundImage: "url('/10003.png')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Mission
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl drop-shadow-md">
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             To operate as a national engineering and construction company that
             delivers efficient, affordable, sustainable, and cost-effective
             materials and services of the highest quality—supporting the
@@ -131,12 +131,12 @@ const App = () => {
           backgroundImage: "url('/10004.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Values
           </h2>
-          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl drop-shadow-md">
+          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <li>
               <strong>Professionalism:</strong> Upholding the highest standards
               in all our services and interactions.
@@ -173,16 +173,16 @@ const App = () => {
           backgroundImage: "url('/10005.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Services & Clients
           </h2>
-          <p className="mb-6 text-lg md:text-xl leading-relaxed drop-shadow-md">
+          <p className="mb-6 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             We supply a wide range of engineering and construction materials to
             meet the needs of diverse sectors, including:
           </p>
-          <ul className="list-disc list-inside space-y-3 text-lg md:text-xl mb-6 drop-shadow-md">
+          <ul className="list-disc list-inside space-y-3 text-lg md:text-xl mb-6 font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <li>Road construction companies and local enterprises</li>
             <li>Women-owned associations and community organizations</li>
             <li>Civil societies supporting children and the elderly</li>
@@ -191,7 +191,7 @@ const App = () => {
             <li>Residential and commercial real estate developers</li>
             <li>Hard-to-reach and priority development areas</li>
           </ul>
-          <p className="text-lg md:text-xl leading-relaxed drop-shadow-md">
+          <p className="text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Our company is dedicated to delivering not only quality products but
             also expert technical support, ensuring our clients achieve
             cost-effective and successful project outcomes.
@@ -200,22 +200,24 @@ const App = () => {
       </section>
 
       {/* Commitment Section */}
-      <section id="commitment" className="py-16 px-6 md:px-20">
-        <h2 className="text-3xl font-bold text-blue-700 mb-6">
-          Our Commitment
-        </h2>
-        <p className="leading-relaxed text-lg mb-4">
-          We believe that successful projects start with strong partnerships.
-          Diamond Trading PLC works closely with clients to interpret their
-          visions, translate them into practical designs, and deliver
-          construction solutions that bring their goals to life.
-        </p>
-        <p className="leading-relaxed text-lg">
-          Through open communication, transparency, and careful project
-          management, we ensure that every stage—from planning to
-          completion—remains on schedule, within budget, and aligned with our
-          clients’ expectations.
-        </p>
+      <section id="commitment" className="py-16 px-6 md:px-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
+            Our Commitment
+          </h2>
+          <p className="leading-relaxed text-lg md:text-xl mb-4 text-gray-800 font-medium">
+            We believe that successful projects start with strong partnerships.
+            Diamond Trading PLC works closely with clients to interpret their
+            visions, translate them into practical designs, and deliver
+            construction solutions that bring their goals to life.
+          </p>
+          <p className="leading-relaxed text-lg md:text-xl text-gray-800 font-medium">
+            Through open communication, transparency, and careful project
+            management, we ensure that every stage—from planning to
+            completion—remains on schedule, within budget, and aligned with our
+            clients' expectations.
+          </p>
+        </div>
       </section>
 
       {/* Contact Section */}
@@ -226,12 +228,12 @@ const App = () => {
           backgroundImage: "url('/10006.png')",
         }}
       >
-        <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-70"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Contact Information
           </h2>
-          <div className="space-y-4 text-lg md:text-xl drop-shadow-md">
+          <div className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <p>Diamond Trading PLC</p>
             <p>Addis Ababa, Ethiopia</p>
             <p>📞 Phone: +251912163649</p>
