@@ -44,16 +44,15 @@ const App = () => {
           }}
         ></div>
 
-        {/* Secondary Overlay - Cement Bag Image with Blend */}
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay"
-          style={{
-            backgroundImage: "url('/dangotecement.png')",
-          }}
-        ></div>
+        {/* Logo Overlay - Top Area to Hide Logo/Title */}
+        <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-blue-900/90 to-transparent"></div>
+
+        {/* Side Overlays for Logo Areas */}
+        <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-blue-900/80"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-900/80"></div>
 
         {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/60 to-blue-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/75 via-blue-800/65 to-blue-900/75"></div>
 
         {/* Content */}
         <div className="relative z-10 p-8 rounded-xl max-w-4xl mx-auto">
