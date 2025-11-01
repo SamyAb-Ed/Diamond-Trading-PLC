@@ -51,7 +51,7 @@ const App = () => {
         id="about"
         className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('/Image.png')",
+          backgroundImage: "url('/10001.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -81,13 +81,17 @@ const App = () => {
       {/* Vision Section */}
       <section
         id="vision"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-blue-100"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/10002.png')",
+        }}
       >
-        <div className="max-w-4xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
             Our Vision
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl text-gray-800">
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl drop-shadow-md">
             To be a leading local supplier of high-quality building and
             construction materials that stabilize and strengthen the local
             market while meeting the growing demand of Ethiopia's construction
@@ -99,13 +103,17 @@ const App = () => {
       {/* Mission Section */}
       <section
         id="mission"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-white"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/10003.png')",
+        }}
       >
-        <div className="max-w-4xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
             Our Mission
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl text-gray-800">
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl drop-shadow-md">
             To operate as a national engineering and construction company that
             delivers efficient, affordable, sustainable, and cost-effective
             materials and services of the highest quality—supporting the
@@ -120,7 +128,7 @@ const App = () => {
         id="values"
         className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('/Image.png')",
+          backgroundImage: "url('/10004.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -160,17 +168,21 @@ const App = () => {
       {/* Services Section */}
       <section
         id="services"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-blue-50"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/10005.jpg')",
+        }}
       >
-        <div className="max-w-4xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
             Our Services & Clients
           </h2>
-          <p className="mb-6 text-lg md:text-xl leading-relaxed text-gray-800">
+          <p className="mb-6 text-lg md:text-xl leading-relaxed drop-shadow-md">
             We supply a wide range of engineering and construction materials to
             meet the needs of diverse sectors, including:
           </p>
-          <ul className="list-disc list-inside space-y-3 text-lg md:text-xl mb-6 text-gray-800">
+          <ul className="list-disc list-inside space-y-3 text-lg md:text-xl mb-6 drop-shadow-md">
             <li>Road construction companies and local enterprises</li>
             <li>Women-owned associations and community organizations</li>
             <li>Civil societies supporting children and the elderly</li>
@@ -179,7 +191,7 @@ const App = () => {
             <li>Residential and commercial real estate developers</li>
             <li>Hard-to-reach and priority development areas</li>
           </ul>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-800">
+          <p className="text-lg md:text-xl leading-relaxed drop-shadow-md">
             Our company is dedicated to delivering not only quality products but
             also expert technical support, ensuring our clients achieve
             cost-effective and successful project outcomes.
@@ -211,7 +223,7 @@ const App = () => {
         id="contact"
         className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('/Image.png')",
+          backgroundImage: "url('/10006.png')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
