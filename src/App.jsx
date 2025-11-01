@@ -49,13 +49,17 @@ const App = () => {
       {/* About Section */}
       <section
         id="about"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-gray-50"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/Image.png')",
+        }}
       >
-        <div className="max-w-4xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
             About Us
           </h2>
-          <p className="leading-relaxed mb-6 text-lg md:text-xl text-gray-700">
+          <p className="leading-relaxed mb-6 text-lg md:text-xl drop-shadow-md">
             Diamond Trading PLC is a locally owned and registered Ethiopian
             company dedicated to providing high-quality construction materials
             and professional services to organizations and individuals across
@@ -64,7 +68,7 @@ const App = () => {
             with Ethiopian commercial regulations and holds a valid business
             license and Tax Identification Number (TIN).
           </p>
-          <p className="leading-relaxed text-lg md:text-xl text-gray-700">
+          <p className="leading-relaxed text-lg md:text-xl drop-shadow-md">
             We are deeply committed to fulfilling our social responsibilities
             and contributing positively to the communities where we live and
             work. Our goal is to become a trusted partner in Ethiopia's
@@ -114,13 +118,17 @@ const App = () => {
       {/* Values Section */}
       <section
         id="values"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-gray-100"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/Image.png')",
+        }}
       >
-        <div className="max-w-4xl w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-blue-700">
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
             Our Values
           </h2>
-          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl text-gray-800">
+          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl drop-shadow-md">
             <li>
               <strong>Professionalism:</strong> Upholding the highest standards
               in all our services and interactions.
@@ -201,13 +209,17 @@ const App = () => {
       {/* Contact Section */}
       <section
         id="contact"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 bg-blue-700"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/Image.png')",
+        }}
       >
-        <div className="max-w-4xl w-full text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-2xl">
             Contact Information
           </h2>
-          <div className="space-y-4 text-lg md:text-xl">
+          <div className="space-y-4 text-lg md:text-xl drop-shadow-md">
             <p>Diamond Trading PLC</p>
             <p>Addis Ababa, Ethiopia</p>
             <p>📞 Phone: +251912163649</p>
