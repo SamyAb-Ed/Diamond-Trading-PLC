@@ -1,8 +1,10 @@
 // File: src/App.jsx
-import React from "react";
+import React, { useState } from "react";
 import ChatAssistant from "./components/ChatAssistant";
 
 const App = () => {
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+
   return (
     <div className="font-sans text-gray-800 scroll-smooth">
       {/* Navbar */}
@@ -211,11 +213,37 @@ const App = () => {
             <li>Residential and commercial real estate developers</li>
             <li>Hard-to-reach and priority development areas</li>
           </ul>
-          <p className="text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mb-6">
             Our company is dedicated to delivering not only quality products but
             also expert technical support, ensuring our clients achieve
             cost-effective and successful project outcomes.
           </p>
+
+          {/* Services Dropdown */}
+          <div className="mt-8">
+            <button
+              onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+              className="w-full md:w-auto px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-200 flex items-center justify-between gap-4"
+            >
+              <span>Our Services</span>
+              <span className="text-xl transform transition-transform duration-200">
+                {servicesDropdownOpen ? "▲" : "▼"}
+              </span>
+            </button>
+
+            {servicesDropdownOpen && (
+              <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+                <ul className="space-y-4 text-lg md:text-xl font-semibold">
+                  <li className="p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-200">
+                    DANGOTE CEMENT DISTRIBUTION
+                  </li>
+                  <li className="p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-200">
+                    COFFEE-HUSK SUPPLIER
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
