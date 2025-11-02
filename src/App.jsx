@@ -352,33 +352,37 @@ const App = () => {
       </section>
 
       {/* Competitive Advantage Section */}
-      <section id="competitive" className="py-16 px-6 md:px-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
+      <section
+        id="competitive"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/adv.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Competitive Advantage
           </h2>
-          <ul className="space-y-4 text-lg md:text-xl text-gray-800 font-medium">
+          <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <li>
-              <strong className="text-blue-700">Expert Knowledge:</strong> Our
-              team possesses in-depth expertise in both construction materials
-              and coffee husk supply, ensuring tailored, practical solutions.
+              <strong>Expert Knowledge:</strong> Our team possesses in-depth
+              expertise in both construction materials and coffee husk supply,
+              ensuring tailored, practical solutions.
             </li>
             <li>
-              <strong className="text-blue-700">Local Presence:</strong> We have
-              strong relationships with Ethiopian industrial clients and
-              understand the local market dynamics.
+              <strong>Local Presence:</strong> We have strong relationships with
+              Ethiopian industrial clients and understand the local market
+              dynamics.
             </li>
             <li>
-              <strong className="text-blue-700">Reliable Delivery:</strong> We
-              ensure timely delivery directly to our clients' plants, reducing
-              logistical burdens.
+              <strong>Reliable Delivery:</strong> We ensure timely delivery
+              directly to our clients' plants, reducing logistical burdens.
             </li>
             <li>
-              <strong className="text-blue-700">
-                Sustainability Leadership:
-              </strong>{" "}
-              We support cleaner, renewable fuel options that contribute to
-              Ethiopia's green energy vision.
+              <strong>Sustainability Leadership:</strong> We support cleaner,
+              renewable fuel options that contribute to Ethiopia's green energy
+              vision.
             </li>
           </ul>
         </div>
