@@ -4,6 +4,27 @@ import ChatAssistant from "./components/ChatAssistant";
 
 const App = () => {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log("Form submitted:", formData);
+    // Reset form
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   return (
     <div className="font-sans text-gray-800 scroll-smooth">
@@ -277,37 +298,130 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-blue-900 bg-opacity-70"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
-            Contact Information
-          </h2>
-          <div className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            <p>Diamond Trading PLC</p>
-            <p>Addis Ababa, Ethiopia</p>
-            <p>📞 Phone: +251912163649</p>
-            <p>
-              📧 Email:{" "}
-              <a
-                href="mailto:diamondtradingplc@gmail.com"
-                className="underline hover:text-blue-200"
+        <div className="max-w-6xl w-full relative z-10 flex flex-col md:flex-row items-start gap-12">
+          {/* Left Side - Title */}
+          <div className="flex-1">
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+              Get In Touch
+            </h2>
+            <div className="mt-8 space-y-4 text-lg md:text-xl font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <p>Diamond Trading PLC</p>
+              <p>Addis Ababa, Ethiopia</p>
+              <p>📞 Phone: +251912163649</p>
+              <p>
+                📧 Email:{" "}
+                <a
+                  href="mailto:diamondtradingplc@gmail.com"
+                  className="underline hover:text-blue-200"
+                >
+                  diamondtradingplc@gmail.com
+                </a>
+              </p>
+              <p>
+                🌐 Website:{" "}
+                <a
+                  href="https://diamondtradingplc.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-blue-200"
+                >
+                  https://diamondtradingplc.com
+                </a>
+              </p>
+              <p>TIN: 0086899384</p>
+              <p>Business License No.: LD/AA/14/669/4679818/2016</p>
+              <p>Registration No.: LD/AA/2/0011289/2016</p>
+            </div>
+          </div>
+
+          {/* Right Side - Contact Form */}
+          <div className="flex-1 w-full">
+            <form
+              onSubmit={handleSubmit}
+              className="bg-gray-900/90 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700"
+            >
+              {/* Name Field */}
+              <div className="mb-6">
+                <label
+                  htmlFor="name"
+                  className="block text-white font-semibold text-lg mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Your Name"
+                  required
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all duration-200"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div className="mb-6">
+                <label
+                  htmlFor="email"
+                  className="block text-white font-semibold text-lg mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="your@email.com"
+                  required
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all duration-200"
+                />
+              </div>
+
+              {/* Message Field */}
+              <div className="mb-6">
+                <label
+                  htmlFor="message"
+                  className="block text-white font-semibold text-lg mb-2"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Your message"
+                  required
+                  rows="5"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all duration-200 resize-none"
+                ></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full px-6 py-3 bg-gray-900 border-2 border-teal-400 rounded-lg text-white font-semibold text-lg hover:bg-teal-400 hover:text-gray-900 transition-all duration-200 flex items-center justify-center gap-2 group"
               >
-                diamondtradingplc@gmail.com
-              </a>
-            </p>
-            <p>
-              🌐 Website:{" "}
-              <a
-                href="https://diamondtradingplc.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-200"
-              >
-                https://diamondtradingplc.com
-              </a>
-            </p>
-            <p>TIN: 0086899384</p>
-            <p>Business License No.: LD/AA/14/669/4679818/2016</p>
-            <p>Registration No.: LD/AA/2/0011289/2016</p>
+                <svg
+                  className="w-5 h-5 text-teal-400 group-hover:text-gray-900 transition-colors duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+                <span>Send Message</span>
+              </button>
+            </form>
           </div>
         </div>
       </section>
