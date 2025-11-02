@@ -31,9 +31,24 @@ const App = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white shadow-md z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-          <h1 className="text-2xl font-bold text-blue-700">
-            Diamond Trading PLC
-          </h1>
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo-icon.svg"
+              alt="Diamond Trading PLC Logo"
+              className="h-8 md:h-10 w-auto"
+              onError={(e) => {
+                // Try fallback to favicon if logo-icon doesn't exist
+                if (e.target.src.endsWith("/logo-icon.svg")) {
+                  e.target.src = "/favicon.svg";
+                } else {
+                  e.target.style.display = "none";
+                }
+              }}
+            />
+            <h1 className="text-xl md:text-2xl font-bold text-blue-700">
+              Diamond Trading PLC
+            </h1>
+          </div>
           <div className="hidden md:flex space-x-6 text-sm font-medium">
             <a href="#about" className="hover:text-blue-600">
               About
