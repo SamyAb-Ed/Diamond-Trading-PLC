@@ -49,17 +49,20 @@ const App = () => {
             <a href="#about" className="hover:text-blue-600">
               About
             </a>
-            <a href="#vision" className="hover:text-blue-600">
-              Vision
-            </a>
             <a href="#mission" className="hover:text-blue-600">
               Mission
+            </a>
+            <a href="#vision" className="hover:text-blue-600">
+              Vision
             </a>
             <a href="#values" className="hover:text-blue-600">
               Values
             </a>
             <a href="#services" className="hover:text-blue-600">
               Services
+            </a>
+            <a href="#competitive" className="hover:text-blue-600">
+              Advantages
             </a>
             <a href="#contact" className="hover:text-blue-600">
               Contact
@@ -94,8 +97,8 @@ const App = () => {
             Building Ethiopia's Future
           </h2>
           <p className="text-xl md:text-2xl font-semibold drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] max-w-3xl mx-auto">
-            Delivering sustainable construction materials and engineering
-            solutions with integrity and quality.
+            Delivering sustainable construction materials and coffee husks to
+            major industries across Ethiopia with integrity and quality.
           </p>
         </div>
       </section>
@@ -116,18 +119,18 @@ const App = () => {
           <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Diamond Trading PLC is a locally owned and registered Ethiopian
             company dedicated to providing high-quality construction materials
-            and professional services to organizations and individuals across
-            the country. Established under the laws of the Addis Ababa City
-            Administration Trade Bureau, the company operates in full compliance
-            with Ethiopian commercial regulations and holds a valid business
-            license and Tax Identification Number (TIN).
+            and sustainable coffee husks to major industries across the nation.
+          </p>
+          <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            Since our establishment in 2023, we have become a trusted partner
+            for leading cement manufacturers and industrial clients, delivering
+            consistent product quality, dependable logistics, and professional
+            service.
           </p>
           <p className="leading-relaxed text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            We are deeply committed to fulfilling our social responsibilities
-            and contributing positively to the communities where we live and
-            work. Our goal is to become a trusted partner in Ethiopia's
-            infrastructure and development sector by supplying durable,
-            affordable, and sustainable construction materials.
+            Located in Addis Ababa, Ethiopia, we take pride in contributing to
+            the nation's growth by supplying materials that literally build
+            Ethiopia's future.
           </p>
         </div>
       </section>
@@ -146,10 +149,9 @@ const App = () => {
             Our Vision
           </h2>
           <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            To be a leading local supplier of high-quality building and
-            construction materials that stabilize and strengthen the local
-            market while meeting the growing demand of Ethiopia's construction
-            industry.
+            To become the preferred supplier of cement, coffee husk and
+            construction materials in Ethiopia, recognized for our reliability,
+            expertise, and commitment to sustainability.
           </p>
         </div>
       </section>
@@ -168,11 +170,9 @@ const App = () => {
             Our Mission
           </h2>
           <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            To operate as a national engineering and construction company that
-            delivers efficient, affordable, sustainable, and cost-effective
-            materials and services of the highest quality—supporting the
-            development of modern, durable, and resilient infrastructure
-            throughout Ethiopia.
+            To supply high-quality construction materials, cement and coffee
+            husk while delivering exceptional customer service and building
+            long-term relationships with our clients and partners.
           </p>
         </div>
       </section>
@@ -192,28 +192,24 @@ const App = () => {
           </h2>
           <ul className="list-disc list-inside space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <li>
-              <strong>Professionalism:</strong> Upholding the highest standards
-              in all our services and interactions.
+              <strong>Quality:</strong> We uphold the highest standards in every
+              product we supply.
             </li>
             <li>
-              <strong>Integrity:</strong> Building trust through transparency,
-              accountability, and ethical practices.
+              <strong>Integrity:</strong> We operate with honesty, transparency,
+              and accountability.
             </li>
             <li>
-              <strong>Creativity:</strong> Encouraging innovative solutions that
-              meet evolving market demands.
+              <strong>Customer Focus:</strong> Our clients are at the center of
+              everything we do.
             </li>
             <li>
-              <strong>Commitment to Quality:</strong> Delivering materials and
-              services that exceed expectations.
+              <strong>Sustainability:</strong> We promote environmentally
+              responsible and energy-efficient practices.
             </li>
             <li>
-              <strong>Customer Focus:</strong> Ensuring timely delivery, clear
-              communication, and complete client satisfaction.
-            </li>
-            <li>
-              <strong>Sustainability:</strong> Promoting environmentally
-              responsible and socially beneficial practices.
+              <strong>Reliability:</strong> Consistent delivery and dependable
+              partnerships are the foundation of our business.
             </li>
           </ul>
         </div>
@@ -230,26 +226,102 @@ const App = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="max-w-4xl w-full relative z-10 text-white">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
-            Our Services & Clients
+            Products & Services
           </h2>
-          <p className="mb-6 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            We supply a wide range of engineering and construction materials to
-            meet the needs of diverse sectors, including:
-          </p>
-          <ul className="list-disc list-inside space-y-3 text-lg md:text-xl mb-6 font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            <li>Road construction companies and local enterprises</li>
-            <li>Women-owned associations and community organizations</li>
-            <li>Civil societies supporting children and the elderly</li>
-            <li>Water pipeline and infrastructure installation companies</li>
-            <li>Public works agencies and government projects</li>
-            <li>Residential and commercial real estate developers</li>
-            <li>Hard-to-reach and priority development areas</li>
-          </ul>
-          <p className="text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mb-6">
-            Our company is dedicated to delivering not only quality products but
-            also expert technical support, ensuring our clients achieve
-            cost-effective and successful project outcomes.
-          </p>
+
+          <div className="mb-8 space-y-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                1. Construction Materials
+              </h3>
+              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                As a leading Dangote Cement Distributor, we supply and deliver
+                bulk and bagged cement across Ethiopia. Our partnerships with
+                top-tier manufacturers ensure quality and reliability at every
+                step.
+              </p>
+              <div className="mb-4">
+                <p className="font-bold text-lg mb-2">Products:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Dangote Cement (All Grades)</li>
+                  <li>
+                    Aggregates & Related Construction Materials (on demand)
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-bold text-lg mb-2">Services:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Cement distribution and logistics</li>
+                  <li>Product consultation and selection assistance</li>
+                  <li>Bulk supply directly to factory or construction site</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                2. Coffee Husks Supply
+              </h3>
+              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                Diamond Trading PLC specializes in supplying high-quality coffee
+                husks, an eco-friendly alternative fuel source widely used in
+                Ethiopia's industrial sector.
+              </p>
+              <div>
+                <p className="font-bold text-lg mb-2">Services:</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Coffee husk supply and delivery</li>
+                  <li>Product consultation and fuel optimization guidance</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                Monthly Supply Capacity
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-white/30">
+                      <th className="p-3 font-bold">Product</th>
+                      <th className="p-3 font-bold">Monthly Supply</th>
+                      <th className="p-3 font-bold">Delivery</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/20">
+                      <td className="p-3">Dangote Cement</td>
+                      <td className="p-3">8,000 Metric Tons</td>
+                      <td className="p-3">As per client preference</td>
+                    </tr>
+                    <tr>
+                      <td className="p-3">Coffee Husks</td>
+                      <td className="p-3">1,800 Metric Tons</td>
+                      <td className="p-3">Direct to factory plant</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                Target Market
+              </h3>
+              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                Our products and services cater to industries seeking
+                high-quality materials and sustainable fuel alternatives:
+              </p>
+              <ul className="list-disc list-inside space-y-2 ml-4">
+                <li>Cement Factories</li>
+                <li>Gypsum Factories</li>
+                <li>Ceramics Manufacturers</li>
+                <li>Large-Scale Construction Companies</li>
+              </ul>
+            </div>
+          </div>
 
           {/* Services Dropdown */}
           <div className="mt-8">
@@ -279,23 +351,73 @@ const App = () => {
         </div>
       </section>
 
-      {/* Commitment Section */}
-      <section id="commitment" className="py-16 px-6 md:px-20 bg-gray-50">
+      {/* Competitive Advantage Section */}
+      <section id="competitive" className="py-16 px-6 md:px-20 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
-            Our Commitment
+            Competitive Advantage
           </h2>
-          <p className="leading-relaxed text-lg md:text-xl mb-4 text-gray-800 font-medium">
-            We believe that successful projects start with strong partnerships.
-            Diamond Trading PLC works closely with clients to interpret their
-            visions, translate them into practical designs, and deliver
-            construction solutions that bring their goals to life.
-          </p>
+          <ul className="space-y-4 text-lg md:text-xl text-gray-800 font-medium">
+            <li>
+              <strong className="text-blue-700">Expert Knowledge:</strong> Our
+              team possesses in-depth expertise in both construction materials
+              and coffee husk supply, ensuring tailored, practical solutions.
+            </li>
+            <li>
+              <strong className="text-blue-700">Local Presence:</strong> We have
+              strong relationships with Ethiopian industrial clients and
+              understand the local market dynamics.
+            </li>
+            <li>
+              <strong className="text-blue-700">Reliable Delivery:</strong> We
+              ensure timely delivery directly to our clients' plants, reducing
+              logistical burdens.
+            </li>
+            <li>
+              <strong className="text-blue-700">
+                Sustainability Leadership:
+              </strong>{" "}
+              We support cleaner, renewable fuel options that contribute to
+              Ethiopia's green energy vision.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section id="achievements" className="py-16 px-6 md:px-20 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
+            Achievements
+          </h2>
+          <ul className="space-y-4 text-lg md:text-xl text-gray-800 font-medium list-disc list-inside">
+            <li>
+              Consistently maintained high customer satisfaction ratings since
+              establishment.
+            </li>
+            <li>
+              Recognized for promoting sustainable practices in coffee husk and
+              alternative fuel supply.
+            </li>
+            <li>
+              Expanded service coverage to multiple industrial zones across
+              Ethiopia.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Our Promise Section */}
+      <section id="promise" className="py-16 px-6 md:px-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
+            Our Promise
+          </h2>
           <p className="leading-relaxed text-lg md:text-xl text-gray-800 font-medium">
-            Through open communication, transparency, and careful project
-            management, we ensure that every stage—from planning to
-            completion—remains on schedule, within budget, and aligned with our
-            clients' expectations.
+            At Diamond Trading PLC, we don't just supply materials — we build
+            partnerships. Our commitment to quality, sustainability, and service
+            excellence ensures that every delivery contributes to a stronger,
+            more sustainable Ethiopia.
           </p>
         </div>
       </section>
@@ -316,9 +438,16 @@ const App = () => {
               Get In Touch
             </h2>
             <div className="mt-8 space-y-4 text-lg md:text-xl font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <p className="text-2xl font-bold mb-2">Company Information</p>
               <p>Diamond Trading PLC</p>
-              <p>Addis Ababa, Ethiopia</p>
-              <p>📞 Phone: +251912163649</p>
+              <p>
+                <strong>Address:</strong> Lideta Woreda 07, House No. 04/316/2,
+                Addis Ababa, Ethiopia
+              </p>
+              <p>
+                <strong>General Manager:</strong> Tsige Abate Work
+              </p>
+              <p>📞 Phone: +251-912 16 36 49</p>
               <p>
                 📧 Email:{" "}
                 <a
@@ -339,9 +468,6 @@ const App = () => {
                   https://diamondtradingplc.com
                 </a>
               </p>
-              <p>TIN: 0086899384</p>
-              <p>Business License No.: LD/AA/14/669/4679818/2016</p>
-              <p>Registration No.: LD/AA/2/0011289/2016</p>
             </div>
           </div>
 
