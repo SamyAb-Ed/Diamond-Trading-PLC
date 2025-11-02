@@ -389,12 +389,19 @@ const App = () => {
       </section>
 
       {/* Achievements Section */}
-      <section id="achievements" className="py-16 px-6 md:px-20 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
+      <section
+        id="achievements"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/adv.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Achievements
           </h2>
-          <ul className="space-y-4 text-lg md:text-xl text-gray-800 font-medium list-disc list-inside">
+          <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] list-disc list-inside">
             <li>
               Consistently maintained high customer satisfaction ratings since
               establishment.
@@ -412,12 +419,19 @@ const App = () => {
       </section>
 
       {/* Our Promise Section */}
-      <section id="promise" className="py-16 px-6 md:px-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-8">
+      <section
+        id="promise"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/adv.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="max-w-4xl w-full relative z-10 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Promise
           </h2>
-          <p className="leading-relaxed text-lg md:text-xl text-gray-800 font-medium">
+          <p className="leading-relaxed text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             At Diamond Trading PLC, we don't just supply materials — we build
             partnerships. Our commitment to quality, sustainability, and service
             excellence ensures that every delivery contributes to a stronger,
