@@ -137,7 +137,7 @@ const App = () => {
         id="vision"
         className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('/10002.png')",
+          backgroundImage: "url('/vision.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
