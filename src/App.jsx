@@ -97,7 +97,7 @@ const App = () => {
             Building Ethiopia's Future
           </h2>
           <p className="text-xl md:text-2xl font-semibold drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] max-w-3xl mx-auto">
-            Delivering sustainable construction materials and coffee husks to
+            Delivering sustainable construction materials and coffee husk to
             major industries across Ethiopia with integrity and quality.
           </p>
         </div>
@@ -119,7 +119,7 @@ const App = () => {
           <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Diamond Trading PLC is a locally owned and registered Ethiopian
             company dedicated to providing high-quality construction materials
-            and sustainable coffee husks to major industries across the nation.
+            and sustainable coffee husk to major industries across the nation.
           </p>
           <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Since our establishment in 2023, we have become a trusted partner
@@ -261,11 +261,11 @@ const App = () => {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                2. Coffee Husks Supply
+                2. Coffee husk Supply
               </h3>
               <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 Diamond Trading PLC specializes in supplying high-quality coffee
-                husks, an eco-friendly alternative fuel source widely used in
+                husk, an eco-friendly alternative fuel source widely used in
                 Ethiopia's industrial sector.
               </p>
               <div>
@@ -297,7 +297,7 @@ const App = () => {
                       <td className="p-3">As per client preference</td>
                     </tr>
                     <tr>
-                      <td className="p-3">Coffee Husks</td>
+                      <td className="p-3">Coffee husk</td>
                       <td className="p-3">1,800 Metric Tons</td>
                       <td className="p-3">Direct to factory plant</td>
                     </tr>
@@ -463,7 +463,7 @@ const App = () => {
                 Addis Ababa, Ethiopia
               </p>
               <p>
-                <strong>General Manager:</strong> Tsige Abate Work
+                <strong>General Manager:</strong> Tsige Abate Worku
               </p>
               <p>📞 Phone: +251-912 16 36 49</p>
               <p>
