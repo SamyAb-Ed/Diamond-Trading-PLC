@@ -669,55 +669,49 @@ const App = () => {
         </div>
       </section>
 
-      {/* Achievements Section */}
+      {/* Achievements & Our Promise Section */}
       <section
         id="achievements"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 pb-20 relative bg-cover bg-center bg-fixed"
         style={{
           backgroundImage: "url('/coffee husk.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
-            Achievements
-          </h2>
-          <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] list-disc list-inside">
-            <li>
-              Consistently maintained high customer satisfaction ratings since
-              establishment.
-            </li>
-            <li>
-              Recognized for promoting sustainable practices in coffee husk and
-              alternative fuel supply.
-            </li>
-            <li>
-              Expanded service coverage to multiple industrial zones across
-              Ethiopia.
-            </li>
-          </ul>
-        </div>
-      </section>
+        <div className="max-w-6xl w-full relative z-10 space-y-8">
+          {/* Achievements */}
+          <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
+              Achievements
+            </h2>
+            <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] list-disc list-inside">
+              <li>
+                Consistently maintained high customer satisfaction ratings since
+                establishment.
+              </li>
+              <li>
+                Recognized for promoting sustainable practices in coffee husk
+                and alternative fuel supply.
+              </li>
+              <li>
+                Expanded service coverage to multiple industrial zones across
+                Ethiopia.
+              </li>
+            </ul>
+          </div>
 
-      {/* Our Promise Section */}
-      <section
-        id="promise"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: "url('/coffee husk.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
-            Our Promise
-          </h2>
-          <p className="leading-relaxed text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-            At Diamond Trading PLC, we don't just supply materials — we build
-            partnerships. Our commitment to quality, sustainability, and service
-            excellence ensures that every delivery contributes to a stronger,
-            more sustainable Ethiopia.
-          </p>
+          {/* Our Promise */}
+          <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
+              Our Promise
+            </h2>
+            <p className="leading-relaxed text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+              At Diamond Trading PLC, we don't just supply materials — we build
+              partnerships. Our commitment to quality, sustainability, and
+              service excellence ensures that every delivery contributes to a
+              stronger, more sustainable Ethiopia.
+            </p>
+          </div>
         </div>
       </section>
 
