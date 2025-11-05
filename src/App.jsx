@@ -638,6 +638,28 @@ const App = () => {
                 ))}
               </div>
 
+              {/* Grand Total */}
+              <div className="grid grid-cols-12 gap-4 items-center py-4 border-t-2 border-gray-400 mt-4">
+                <div className="col-span-1"></div>
+                <div className="col-span-11 md:col-span-8"></div>
+                <div className="col-span-11 md:col-span-3 md:text-right">
+                  <div className="flex flex-col">
+                    <span className="text-sm font-semibold text-gray-600 uppercase mb-1">
+                      Grand Total
+                    </span>
+                    <span className="text-xl md:text-2xl font-bold text-gray-900">
+                      $
+                      {cartItems
+                        .reduce(
+                          (total, item) => total + item.price * item.quantity,
+                          0
+                        )
+                        .toFixed(2)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
               {/* Browse Products Button */}
               <button
                 onClick={() => {
