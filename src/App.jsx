@@ -85,14 +85,14 @@ const App = () => {
         ></div>
 
         {/* Logo Overlay - Top Area to Hide Logo/Title */}
-        <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-sky-50/90 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-sky-50/30 to-transparent"></div>
 
         {/* Side Overlays for Logo Areas */}
-        <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-sky-50/80"></div>
-        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-sky-50/80"></div>
+        <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-sky-50/30"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-sky-50/30"></div>
 
         {/* Light Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
 
         {/* Content */}
         <div className="relative z-10 p-8 rounded-xl max-w-4xl mx-auto">
@@ -114,7 +114,7 @@ const App = () => {
           backgroundImage: "url('/10001.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             About Us
@@ -146,7 +146,7 @@ const App = () => {
           backgroundImage: "url('/vision.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Vision
@@ -167,7 +167,7 @@ const App = () => {
           backgroundImage: "url('/10003.png')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Mission
@@ -188,7 +188,7 @@ const App = () => {
           backgroundImage: "url('/10004.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Values
@@ -226,7 +226,7 @@ const App = () => {
           backgroundImage: "url('/10005.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Products & Services
@@ -362,7 +362,7 @@ const App = () => {
           backgroundImage: "url('/adv.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Competitive Advantage
@@ -399,7 +399,7 @@ const App = () => {
           backgroundImage: "url('/coffee husk.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Achievements
@@ -429,7 +429,7 @@ const App = () => {
           backgroundImage: "url('/coffee husk.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Promise
@@ -451,7 +451,7 @@ const App = () => {
           backgroundImage: "url('/10006.png')",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-6xl w-full relative z-10 flex flex-col md:flex-row items-start gap-12">
           {/* Left Side - Title */}
           <div className="flex-1">
