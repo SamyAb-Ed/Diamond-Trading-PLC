@@ -114,8 +114,8 @@ const App = () => {
           backgroundImage: "url('/10001.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             About Us
           </h2>
@@ -146,8 +146,8 @@ const App = () => {
           backgroundImage: "url('/vision.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Vision
           </h2>
@@ -167,8 +167,8 @@ const App = () => {
           backgroundImage: "url('/10003.png')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Mission
           </h2>
@@ -188,8 +188,8 @@ const App = () => {
           backgroundImage: "url('/10004.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Values
           </h2>
@@ -226,14 +226,14 @@ const App = () => {
           backgroundImage: "url('/10005.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Products & Services
           </h2>
 
           <div className="mb-8 space-y-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 1. Construction Materials
               </h3>
@@ -262,7 +262,7 @@ const App = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 2. Coffee husk Supply
               </h3>
@@ -280,21 +280,21 @@ const App = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 Monthly Supply Capacity
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="border-b border-white/30">
+                    <tr className="border-b border-gray-300/50">
                       <th className="p-3 font-bold">Product</th>
                       <th className="p-3 font-bold">Monthly Supply</th>
                       <th className="p-3 font-bold">Delivery</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-white/20">
+                    <tr className="border-b border-gray-300/30">
                       <td className="p-3">Dangote Cement</td>
                       <td className="p-3">8,000 Metric Tons</td>
                       <td className="p-3">As per client preference</td>
@@ -309,7 +309,7 @@ const App = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 Target Market
               </h3>
@@ -339,12 +339,12 @@ const App = () => {
             </button>
 
             {servicesDropdownOpen && (
-              <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+              <div className="mt-4 bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
                 <ul className="space-y-4 text-lg md:text-xl font-semibold">
-                  <li className="p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-200">
+                  <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200">
                     DANGOTE CEMENT DISTRIBUTION
                   </li>
-                  <li className="p-3 bg-white/5 rounded-lg hover:bg-white/10 transition-colors duration-200">
+                  <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200">
                     COFFEE-HUSK SUPPLIER
                   </li>
                 </ul>
@@ -362,8 +362,8 @@ const App = () => {
           backgroundImage: "url('/adv.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Competitive Advantage
           </h2>
@@ -399,8 +399,8 @@ const App = () => {
           backgroundImage: "url('/coffee husk.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Achievements
           </h2>
@@ -429,8 +429,8 @@ const App = () => {
           backgroundImage: "url('/coffee husk.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div className="max-w-4xl w-full relative z-10 text-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
+        <div className="max-w-4xl w-full relative z-10 text-gray-800">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
             Our Promise
           </h2>
@@ -451,14 +451,14 @@ const App = () => {
           backgroundImage: "url('/10006.png')",
         }}
       >
-        <div className="absolute inset-0 bg-blue-900 bg-opacity-70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
         <div className="max-w-6xl w-full relative z-10 flex flex-col md:flex-row items-start gap-12">
           {/* Left Side - Title */}
           <div className="flex-1">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
               Get In Touch
             </h2>
-            <div className="mt-8 space-y-4 text-lg md:text-xl font-semibold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            <div className="mt-8 space-y-4 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               <p className="text-2xl font-bold mb-2">Company Information</p>
               <p>Diamond Trading PLC</p>
               <p>
@@ -473,7 +473,7 @@ const App = () => {
                 📧 Email:{" "}
                 <a
                   href="mailto:diamondtradingplc@gmail.com"
-                  className="underline hover:text-blue-200"
+                  className="underline hover:text-blue-600"
                 >
                   diamondtradingplc@gmail.com
                 </a>
@@ -484,7 +484,7 @@ const App = () => {
                   href="https://diamondtradingplc.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-blue-200"
+                  className="underline hover:text-blue-600"
                 >
                   https://diamondtradingplc.com
                 </a>
