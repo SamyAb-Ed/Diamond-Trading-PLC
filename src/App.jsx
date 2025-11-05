@@ -75,7 +75,7 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center text-center text-gray-800 overflow-hidden">
         {/* Primary Background - Factory Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed"
@@ -85,14 +85,14 @@ const App = () => {
         ></div>
 
         {/* Logo Overlay - Top Area to Hide Logo/Title */}
-        <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-blue-900/90 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-sky-50/90 to-transparent"></div>
 
         {/* Side Overlays for Logo Areas */}
-        <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-blue-900/80"></div>
-        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-900/80"></div>
+        <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-sky-50/80"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-sky-50/80"></div>
 
-        {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/75 via-blue-800/65 to-blue-900/75"></div>
+        {/* Light Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/75 via-blue-50/65 to-sky-50/75"></div>
 
         {/* Content */}
         <div className="relative z-10 p-8 rounded-xl max-w-4xl mx-auto">
