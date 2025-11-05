@@ -800,7 +800,7 @@ const App = () => {
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="block text-white font-semibold text-lg mb-2"
+                  className="block text-gray-800 font-semibold text-lg mb-2"
                 >
                   Email
                 </label>
@@ -812,7 +812,7 @@ const App = () => {
                   onChange={handleInputChange}
                   placeholder="your@email.com"
                   required
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
                 />
               </div>
 
@@ -820,7 +820,7 @@ const App = () => {
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block text-white font-semibold text-lg mb-2"
+                  className="block text-gray-800 font-semibold text-lg mb-2"
                 >
                   Message
                 </label>
@@ -832,7 +832,7 @@ const App = () => {
                   placeholder="Your message"
                   required
                   rows="5"
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200 resize-none"
                 ></textarea>
               </div>
 
