@@ -9,6 +9,56 @@ const App = () => {
     email: "",
     message: "",
   });
+  const [shopFormData, setShopFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [cartItems, setCartItems] = useState([
+    {
+      id: 1,
+      name: "Dangote Cement",
+      image: "/dangotecement.png",
+      quantity: 1,
+      price: 0,
+    },
+    {
+      id: 2,
+      name: "Coffee Husk",
+      image: "/coffee husk.jpg",
+      quantity: 1,
+      price: 0,
+    },
+  ]);
+
+  const updateQuantity = (id, change) => {
+    setCartItems((prev) =>
+      prev.map((item) =>
+        item.id === id
+          ? { ...item, quantity: Math.max(1, item.quantity + change) }
+          : item
+      )
+    );
+  };
+
+  const removeItem = (id) => {
+    setCartItems((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const handleShopFormChange = (e) => {
+    const { name, value } = e.target;
+    setShopFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleShopSubmit = (e) => {
+    e.preventDefault();
+    console.log("Shop request submitted:", { cartItems, shopFormData });
+    // Reset form
+    setShopFormData({ name: "", email: "", message: "" });
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -63,6 +113,9 @@ const App = () => {
             </a>
             <a href="#services" className="hover:text-blue-600">
               Services
+            </a>
+            <a href="#shop" className="hover:text-blue-600">
+              Shop
             </a>
             <a href="#competitive" className="hover:text-blue-600">
               Advantages
@@ -356,6 +409,217 @@ const App = () => {
                 </ul>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Shop Section */}
+      <section
+        id="shop"
+        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 pb-20 relative bg-cover bg-center bg-fixed"
+        style={{
+          backgroundImage: "url('/10005.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
+        <div className="max-w-7xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
+            Shop
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Left Section - Product List */}
+            <div className="lg:col-span-2 space-y-6">
+              {/* Product List Header */}
+              <div className="hidden md:grid grid-cols-12 gap-4 pb-4 border-b border-gray-300">
+                <div className="col-span-5">
+                  <span className="text-sm font-bold text-gray-700 uppercase">
+                    PRODUCT
+                  </span>
+                </div>
+                <div className="col-span-3 text-center">
+                  <span className="text-sm font-bold text-gray-700 uppercase">
+                    QUANTITY
+                  </span>
+                </div>
+                <div className="col-span-3 text-right">
+                  <span className="text-sm font-bold text-gray-700 uppercase">
+                    TOTAL
+                  </span>
+                </div>
+                <div className="col-span-1"></div>
+              </div>
+
+              {/* Product Items */}
+              <div className="space-y-4">
+                {cartItems.map((item) => (
+                  <div
+                    key={item.id}
+                    className="grid grid-cols-12 gap-4 items-center py-4 border-b border-gray-200"
+                  >
+                    {/* Remove Button */}
+                    <div className="col-span-1 flex justify-center">
+                      <button
+                        onClick={() => removeItem(item.id)}
+                        className="w-6 h-6 rounded-full bg-gray-200 hover:bg-red-500 text-gray-600 hover:text-white flex items-center justify-center transition-colors duration-200 text-lg leading-none"
+                        aria-label="Remove item"
+                      >
+                        ×
+                      </button>
+                    </div>
+
+                    {/* Product Image and Name */}
+                    <div className="col-span-11 md:col-span-4 flex items-center gap-4">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-16 h-16 object-cover rounded-lg"
+                        onError={(e) => {
+                          e.target.src = "/dangotecement.png";
+                        }}
+                      />
+                      <span className="font-semibold text-gray-800 text-sm md:text-base">
+                        {item.name.toUpperCase()}
+                      </span>
+                    </div>
+
+                    {/* Quantity Selector */}
+                    <div className="col-span-11 md:col-span-3 flex items-center justify-start gap-2">
+                      <button
+                        onClick={() => updateQuantity(item.id, -1)}
+                        className="w-8 h-8 rounded border border-gray-300 bg-white hover:bg-gray-100 text-gray-700 font-bold flex items-center justify-center transition-colors duration-200"
+                      >
+                        -
+                      </button>
+                      <input
+                        type="number"
+                        value={item.quantity}
+                        readOnly
+                        className="w-12 h-8 text-center border border-gray-300 rounded text-gray-800 font-semibold"
+                        min="1"
+                      />
+                      <button
+                        onClick={() => updateQuantity(item.id, 1)}
+                        className="w-8 h-8 rounded border border-gray-300 bg-white hover:bg-gray-100 text-gray-700 font-bold flex items-center justify-center transition-colors duration-200"
+                      >
+                        +
+                      </button>
+                    </div>
+
+                    {/* Total */}
+                    <div className="col-span-11 md:col-span-3 md:text-right">
+                      <span className="text-gray-800 font-semibold">
+                        ${(item.price * item.quantity).toFixed(2)}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Browse Products Button */}
+              <button
+                onClick={() => {
+                  // Scroll to services or show products
+                  document.getElementById("services")?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-200"
+              >
+                BROWSE PRODUCTS
+              </button>
+
+              {/* Product Categories */}
+              <div className="pt-6 border-t border-dashed border-gray-300">
+                <h3 className="text-sm font-semibold text-gray-600 uppercase mb-4">
+                  PRODUCT CATEGORIES
+                </h3>
+                <div className="space-y-2">
+                  <a
+                    href="#services"
+                    className="block text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                  >
+                    Export Products
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Section - Request Form */}
+            <div className="lg:col-span-1">
+              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg sticky top-20">
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                  Send the request
+                </h3>
+
+                <form onSubmit={handleShopSubmit} className="space-y-4">
+                  {/* Name Field */}
+                  <div>
+                    <label
+                      htmlFor="shop-name"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Name<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="shop-name"
+                      name="name"
+                      value={shopFormData.name}
+                      onChange={handleShopFormChange}
+                      required
+                      className="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
+                    />
+                  </div>
+
+                  {/* Email Field */}
+                  <div>
+                    <label
+                      htmlFor="shop-email"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Email<span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="shop-email"
+                      name="email"
+                      value={shopFormData.email}
+                      onChange={handleShopFormChange}
+                      required
+                      className="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
+                    />
+                  </div>
+
+                  {/* Message Field */}
+                  <div>
+                    <label
+                      htmlFor="shop-message"
+                      className="block text-sm font-semibold text-gray-700 mb-2"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="shop-message"
+                      name="message"
+                      value={shopFormData.message}
+                      onChange={handleShopFormChange}
+                      placeholder="Notes on your request..."
+                      rows="4"
+                      className="w-full px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200 resize-y"
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-200"
+                  >
+                    SEND YOUR REQUEST
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
