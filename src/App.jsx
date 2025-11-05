@@ -31,7 +31,10 @@ const App = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white shadow-md z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-          <div className="flex items-center gap-3">
+          <a
+            href="#"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          >
             <img
               src="/Diamond Trading PLC logo.png"
               alt="Diamond Trading PLC Logo"
@@ -41,10 +44,10 @@ const App = () => {
                 e.target.style.display = "none";
               }}
             />
-            <h1 className="text-xl md:text-2xl font-bold text-blue-700">
+            <h1 className="text-xl md:text-2xl font-bold text-blue-700 cursor-pointer">
               Diamond Trading PLC
             </h1>
-          </div>
+          </a>
           <div className="hidden md:flex space-x-6 text-sm font-medium">
             <a href="#about" className="hover:text-blue-600">
               About
@@ -149,9 +152,9 @@ const App = () => {
             Our Vision
           </h2>
           <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            To become the preferred supplier of
-            construction materials in Ethiopia, recognized for our reliability,
-            expertise, and commitment to sustainability.
+            To become the preferred supplier of construction materials in
+            Ethiopia, recognized for our reliability, expertise, and commitment
+            to sustainability.
           </p>
         </div>
       </section>
@@ -170,8 +173,9 @@ const App = () => {
             Our Mission
           </h2>
           <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            To supply high-quality construction materials while delivering exceptional customer service and building
-            long-term relationships with our clients and partners.
+            To supply high-quality construction materials while delivering
+            exceptional customer service and building long-term relationships
+            with our clients and partners.
           </p>
         </div>
       </section>
@@ -366,8 +370,8 @@ const App = () => {
           <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <li>
               <strong>Expert Knowledge:</strong> Our team possesses in-depth
-              expertise in the supply of construction materials,
-              ensuring tailored, practical solutions.
+              expertise in the supply of construction materials, ensuring
+              tailored, practical solutions.
             </li>
             <li>
               <strong>Local Presence:</strong> We have strong relationships with
