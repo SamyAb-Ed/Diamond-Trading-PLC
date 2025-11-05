@@ -97,8 +97,8 @@ const App = () => {
             Building Ethiopia's Future
           </h2>
           <p className="text-xl md:text-2xl font-semibold drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] max-w-3xl mx-auto">
-            Delivering sustainable construction materials and coffee husk to
-            major industries across Ethiopia with integrity and quality.
+            Delivering sustainable construction materials to major industries
+            across Ethiopia with integrity and quality.
           </p>
         </div>
       </section>
@@ -119,7 +119,7 @@ const App = () => {
           <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Diamond Trading PLC is a locally owned and registered Ethiopian
             company dedicated to providing high-quality construction materials
-            and sustainable coffee husk to major industries across the nation.
+            to major industries across the nation.
           </p>
           <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             Since our establishment in 2023, we have become a trusted partner
@@ -149,7 +149,7 @@ const App = () => {
             Our Vision
           </h2>
           <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            To become the preferred supplier of cement, coffee husk and
+            To become the preferred supplier of
             construction materials in Ethiopia, recognized for our reliability,
             expertise, and commitment to sustainability.
           </p>
@@ -170,8 +170,7 @@ const App = () => {
             Our Mission
           </h2>
           <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            To supply high-quality construction materials, cement and coffee
-            husk while delivering exceptional customer service and building
+            To supply high-quality construction materials while delivering exceptional customer service and building
             long-term relationships with our clients and partners.
           </p>
         </div>
@@ -367,7 +366,7 @@ const App = () => {
           <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             <li>
               <strong>Expert Knowledge:</strong> Our team possesses in-depth
-              expertise in both construction materials and coffee husk supply,
+              expertise in the supply of construction materials,
               ensuring tailored, practical solutions.
             </li>
             <li>
