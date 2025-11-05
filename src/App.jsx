@@ -332,57 +332,6 @@ const App = () => {
                 </ul>
               </div>
             </div>
-
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-                Monthly Supply Capacity
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="border-b border-gray-300/50">
-                      <th className="p-3 font-bold text-gray-800">Product</th>
-                      <th className="p-3 font-bold text-gray-800">
-                        Monthly Supply
-                      </th>
-                      <th className="p-3 font-bold text-gray-800">Delivery</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-300/30">
-                      <td className="p-3 text-gray-800">Dangote Cement</td>
-                      <td className="p-3 text-gray-800">8,000 Metric Tons</td>
-                      <td className="p-3 text-gray-800">
-                        As per client preference
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="p-3 text-gray-800">Coffee husk</td>
-                      <td className="p-3 text-gray-800">1,800 Metric Tons</td>
-                      <td className="p-3 text-gray-800">
-                        Direct to factory plant
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-                Target Market
-              </h3>
-              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-                Our products and services cater to industries seeking
-                high-quality materials and sustainable fuel alternatives:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Cement Factories</li>
-                <li>Gypsum Factories</li>
-                <li>Ceramics Manufacturers</li>
-                <li>Large-Scale Construction Companies</li>
-              </ul>
-            </div>
           </div>
 
           {/* Services Dropdown */}
@@ -398,7 +347,7 @@ const App = () => {
             </button>
 
             {servicesDropdownOpen && (
-              <div className="mt-4 bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
+              <div className="mt-4 bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg space-y-6">
                 <ul className="space-y-4 text-lg md:text-xl font-semibold">
                   <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200 text-gray-800">
                     DANGOTE CEMENT DISTRIBUTION
@@ -407,6 +356,65 @@ const App = () => {
                     COFFEE-HUSK SUPPLIER
                   </li>
                 </ul>
+
+                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    Monthly Supply Capacity
+                  </h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-left border-collapse">
+                      <thead>
+                        <tr className="border-b border-gray-300/50">
+                          <th className="p-3 font-bold text-gray-800">
+                            Product
+                          </th>
+                          <th className="p-3 font-bold text-gray-800">
+                            Monthly Supply
+                          </th>
+                          <th className="p-3 font-bold text-gray-800">
+                            Delivery
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b border-gray-300/30">
+                          <td className="p-3 text-gray-800">Dangote Cement</td>
+                          <td className="p-3 text-gray-800">
+                            8,000 Metric Tons
+                          </td>
+                          <td className="p-3 text-gray-800">
+                            As per client preference
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="p-3 text-gray-800">Coffee husk</td>
+                          <td className="p-3 text-gray-800">
+                            1,800 Metric Tons
+                          </td>
+                          <td className="p-3 text-gray-800">
+                            Direct to factory plant
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    Target Market
+                  </h3>
+                  <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    Our products and services cater to industries seeking
+                    high-quality materials and sustainable fuel alternatives:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Cement Factories</li>
+                    <li>Gypsum Factories</li>
+                    <li>Ceramics Manufacturers</li>
+                    <li>Large-Scale Construction Companies</li>
+                  </ul>
+                </div>
               </div>
             )}
           </div>
