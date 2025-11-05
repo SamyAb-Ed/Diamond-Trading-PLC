@@ -14,6 +14,12 @@ const App = () => {
     email: "",
     message: "",
   });
+  const [quoteFormData, setQuoteFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    comment: "",
+  });
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
@@ -58,6 +64,22 @@ const App = () => {
     console.log("Shop request submitted:", { cartItems, shopFormData });
     // Reset form
     setShopFormData({ name: "", email: "", message: "" });
+  };
+
+  const handleQuoteFormChange = (e) => {
+    const { name, value } = e.target;
+    setQuoteFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleQuoteSubmit = (e) => {
+    e.preventDefault();
+    console.log("Quote request submitted:", quoteFormData);
+    // Reset form
+    setQuoteFormData({ name: "", email: "", phone: "", comment: "" });
+    alert("Thank you! We will get back to you soon with a quote.");
   };
 
   const handleInputChange = (e) => {
@@ -417,6 +439,98 @@ const App = () => {
                 </div>
               </div>
             )}
+          </div>
+
+          {/* Get Quote Form */}
+          <div className="mt-8 bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200">
+            <form onSubmit={handleQuoteSubmit} className="space-y-6">
+              {/* Name Field */}
+              <div>
+                <label
+                  htmlFor="quote-name"
+                  className="block text-gray-700 font-semibold text-base mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="quote-name"
+                  name="name"
+                  value={quoteFormData.name}
+                  onChange={handleQuoteFormChange}
+                  placeholder="Your Name"
+                  required
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-gray-400 focus:bg-white transition-all duration-200"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div>
+                <label
+                  htmlFor="quote-email"
+                  className="block text-gray-700 font-semibold text-base mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="quote-email"
+                  name="email"
+                  value={quoteFormData.email}
+                  onChange={handleQuoteFormChange}
+                  placeholder="your@email.com"
+                  required
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-gray-400 focus:bg-white transition-all duration-200"
+                />
+              </div>
+
+              {/* Phone Number Field */}
+              <div>
+                <label
+                  htmlFor="quote-phone"
+                  className="block text-gray-700 font-semibold text-base mb-2"
+                >
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="quote-phone"
+                  name="phone"
+                  value={quoteFormData.phone}
+                  onChange={handleQuoteFormChange}
+                  placeholder="Your Phone Number"
+                  required
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-gray-400 focus:bg-white transition-all duration-200"
+                />
+              </div>
+
+              {/* Comment Field */}
+              <div>
+                <label
+                  htmlFor="quote-comment"
+                  className="block text-gray-700 font-semibold text-base mb-2"
+                >
+                  Comment
+                </label>
+                <input
+                  type="text"
+                  id="quote-comment"
+                  name="comment"
+                  value={quoteFormData.comment}
+                  onChange={handleQuoteFormChange}
+                  placeholder="Your Comment"
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-gray-400 focus:bg-white transition-all duration-200"
+                />
+              </div>
+
+              {/* Get Quote Button */}
+              <button
+                type="submit"
+                className="w-full px-6 py-4 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg rounded-lg shadow-md transition-all duration-200"
+              >
+                Get Quote
+              </button>
+            </form>
           </div>
         </div>
       </section>
