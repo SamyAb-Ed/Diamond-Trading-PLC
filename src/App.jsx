@@ -95,11 +95,11 @@ const App = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
 
         {/* Content */}
-        <div className="relative z-10 p-8 rounded-xl max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+        <div className="relative z-10 p-8 rounded-xl max-w-4xl mx-auto bg-white/85 backdrop-blur-sm shadow-2xl border border-white/50">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Building Ethiopia's Future
           </h2>
-          <p className="text-xl md:text-2xl font-semibold drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)] max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl font-semibold text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)] max-w-3xl mx-auto">
             Delivering sustainable construction materials to major industries
             across Ethiopia with integrity and quality.
           </p>
@@ -115,22 +115,22 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             About Us
           </h2>
-          <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             Diamond Trading PLC is a locally owned and registered Ethiopian
             company dedicated to providing high-quality construction materials
             to major industries across the nation.
           </p>
-          <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="leading-relaxed mb-6 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             Since our establishment in 2023, we have become a trusted partner
             for leading cement manufacturers and industrial clients, delivering
             consistent product quality, dependable logistics, and professional
             service.
           </p>
-          <p className="leading-relaxed text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="leading-relaxed text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             Located in Addis Ababa, Ethiopia, we take pride in contributing to
             the nation's growth by supplying materials that literally build
             Ethiopia's future.
@@ -147,11 +147,11 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Our Vision
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             To become the preferred supplier of construction materials in
             Ethiopia, recognized for our reliability, expertise, and commitment
             to sustainability.
@@ -168,11 +168,11 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Our Mission
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             To supply high-quality construction materials while delivering
             exceptional customer service and building long-term relationships
             with our clients and partners.
@@ -189,11 +189,11 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Our Values
           </h2>
-          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             <li>
               <strong>Quality:</strong> We uphold the highest standards in every
               product we supply.
@@ -227,17 +227,17 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Products & Services
           </h2>
 
           <div className="mb-8 space-y-6">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 1. Construction Materials
               </h3>
-              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 As a leading Dangote Cement Distributor, we supply and deliver
                 bulk and bagged cement across Ethiopia. Our partnerships with
                 top-tier manufacturers ensure quality and reliability at every
@@ -263,10 +263,10 @@ const App = () => {
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 2. Coffee husk Supply
               </h3>
-              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 Diamond Trading PLC specializes in supplying high-quality coffee
                 husk, an eco-friendly alternative fuel source widely used in
                 Ethiopia's industrial sector.
@@ -281,28 +281,34 @@ const App = () => {
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 Monthly Supply Capacity
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="border-b border-gray-300/50">
-                      <th className="p-3 font-bold">Product</th>
-                      <th className="p-3 font-bold">Monthly Supply</th>
-                      <th className="p-3 font-bold">Delivery</th>
+                      <th className="p-3 font-bold text-gray-800">Product</th>
+                      <th className="p-3 font-bold text-gray-800">
+                        Monthly Supply
+                      </th>
+                      <th className="p-3 font-bold text-gray-800">Delivery</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-gray-300/30">
-                      <td className="p-3">Dangote Cement</td>
-                      <td className="p-3">8,000 Metric Tons</td>
-                      <td className="p-3">As per client preference</td>
+                      <td className="p-3 text-gray-800">Dangote Cement</td>
+                      <td className="p-3 text-gray-800">8,000 Metric Tons</td>
+                      <td className="p-3 text-gray-800">
+                        As per client preference
+                      </td>
                     </tr>
                     <tr>
-                      <td className="p-3">Coffee husk</td>
-                      <td className="p-3">1,800 Metric Tons</td>
-                      <td className="p-3">Direct to factory plant</td>
+                      <td className="p-3 text-gray-800">Coffee husk</td>
+                      <td className="p-3 text-gray-800">1,800 Metric Tons</td>
+                      <td className="p-3 text-gray-800">
+                        Direct to factory plant
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -310,10 +316,10 @@ const App = () => {
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 Target Market
               </h3>
-              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              <p className="mb-4 text-lg md:text-xl leading-relaxed font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
                 Our products and services cater to industries seeking
                 high-quality materials and sustainable fuel alternatives:
               </p>
@@ -341,10 +347,10 @@ const App = () => {
             {servicesDropdownOpen && (
               <div className="mt-4 bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
                 <ul className="space-y-4 text-lg md:text-xl font-semibold">
-                  <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200">
+                  <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200 text-gray-800">
                     DANGOTE CEMENT DISTRIBUTION
                   </li>
-                  <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200">
+                  <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200 text-gray-800">
                     COFFEE-HUSK SUPPLIER
                   </li>
                 </ul>
@@ -363,8 +369,8 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Competitive Advantage
           </h2>
           <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
@@ -400,8 +406,8 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Achievements
           </h2>
           <ul className="space-y-4 text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] list-disc list-inside">
@@ -430,11 +436,11 @@ const App = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 text-gray-800">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
             Our Promise
           </h2>
-          <p className="leading-relaxed text-lg md:text-xl font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="leading-relaxed text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
             At Diamond Trading PLC, we don't just supply materials — we build
             partnerships. Our commitment to quality, sustainability, and service
             excellence ensures that every delivery contributes to a stronger,
@@ -454,11 +460,11 @@ const App = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-6xl w-full relative z-10 flex flex-col md:flex-row items-start gap-12">
           {/* Left Side - Title */}
-          <div className="flex-1">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4 drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">
+          <div className="flex-1 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
               Get In Touch
             </h2>
-            <div className="mt-8 space-y-4 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            <div className="mt-8 space-y-4 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
               <p className="text-2xl font-bold mb-2">Company Information</p>
               <p>Diamond Trading PLC</p>
               <p>
@@ -496,13 +502,13 @@ const App = () => {
           <div className="flex-1 w-full">
             <form
               onSubmit={handleSubmit}
-              className="bg-gray-900/90 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-gray-700"
+              className="bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50"
             >
               {/* Name Field */}
               <div className="mb-6">
                 <label
                   htmlFor="name"
-                  className="block text-white font-semibold text-lg mb-2"
+                  className="block text-gray-800 font-semibold text-lg mb-2"
                 >
                   Name
                 </label>
@@ -514,7 +520,7 @@ const App = () => {
                   onChange={handleInputChange}
                   placeholder="Your Name"
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all duration-200"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
                 />
               </div>
 
@@ -534,7 +540,7 @@ const App = () => {
                   onChange={handleInputChange}
                   placeholder="your@email.com"
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all duration-200"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-200"
                 />
               </div>
 
@@ -561,10 +567,10 @@ const App = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-gray-900 border-2 border-teal-400 rounded-lg text-white font-semibold text-lg hover:bg-teal-400 hover:text-gray-900 transition-all duration-200 flex items-center justify-center gap-2 group"
+                className="w-full px-6 py-3 bg-blue-600 border-2 border-blue-600 rounded-lg text-white font-semibold text-lg hover:bg-blue-700 hover:border-blue-700 transition-all duration-200 flex items-center justify-center gap-2 group"
               >
                 <svg
-                  className="w-5 h-5 text-teal-400 group-hover:text-gray-900 transition-colors duration-200"
+                  className="w-5 h-5 text-white transition-colors duration-200"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
