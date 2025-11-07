@@ -381,7 +381,7 @@ const App = () => {
                     DANGOTE CEMENT DISTRIBUTION
                   </li>
                   <li className="p-3 bg-gray-100/80 rounded-lg hover:bg-gray-200/80 transition-colors duration-200 text-gray-800">
-                    COFFEE-HUSK SUPPLIER
+                    COFFEE-HUSK SUPPLY
                   </li>
                 </ul>
 
