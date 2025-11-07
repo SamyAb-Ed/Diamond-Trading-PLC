@@ -4,6 +4,8 @@ import ChatAssistant from "./components/ChatAssistant";
 
 const App = () => {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [guidingPrinciplesDropdownOpen, setGuidingPrinciplesDropdownOpen] =
+    useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -124,14 +126,8 @@ const App = () => {
             <a href="#about" className="hover:text-blue-600">
               About
             </a>
-            <a href="#mission" className="hover:text-blue-600">
-              Mission
-            </a>
-            <a href="#vision" className="hover:text-blue-600">
-              Vision
-            </a>
-            <a href="#values" className="hover:text-blue-600">
-              Values
+            <a href="#guiding-principles" className="hover:text-blue-600">
+              Guiding Principles
             </a>
             <a href="#services" className="hover:text-blue-600">
               Services
@@ -213,9 +209,9 @@ const App = () => {
         </div>
       </section>
 
-      {/* Vision Section */}
+      {/* Guiding Principles Section */}
       <section
-        id="vision"
+        id="guiding-principles"
         className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
         style={{
           backgroundImage: "url('/vision.jpg')",
@@ -224,72 +220,82 @@ const App = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
         <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
-            Our Vision
+            Guiding Principles
           </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-            To become the preferred supplier of construction materials in
-            Ethiopia, recognized for our reliability, expertise, and commitment
-            to sustainability.
-          </p>
-        </div>
-      </section>
 
-      {/* Mission Section */}
-      <section
-        id="mission"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: "url('/10003.png')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
-            Our Mission
-          </h2>
-          <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-            To supply high-quality construction materials while delivering
-            exceptional customer service and building long-term relationships
-            with our clients and partners.
-          </p>
-        </div>
-      </section>
+          {/* Guiding Principles Dropdown */}
+          <div className="mt-8">
+            <button
+              onClick={() =>
+                setGuidingPrinciplesDropdownOpen(!guidingPrinciplesDropdownOpen)
+              }
+              className="w-full md:w-auto px-6 py-3 bg-blue-700 hover:bg-blue-800 text-white font-semibold text-lg rounded-lg shadow-lg transition-all duration-200 flex items-center justify-between gap-4"
+            >
+              <span>Mission, Vision & Values</span>
+              <span className="text-xl transform transition-transform duration-200">
+                {guidingPrinciplesDropdownOpen ? "▲" : "▼"}
+              </span>
+            </button>
 
-      {/* Values Section */}
-      <section
-        id="values"
-        className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 relative bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: "url('/10004.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50/30 via-blue-50/25 to-sky-50/30"></div>
-        <div className="max-w-4xl w-full relative z-10 bg-white/85 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/50">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800 drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]">
-            Our Values
-          </h2>
-          <ul className="list-disc list-inside space-y-4 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
-            <li>
-              <strong>Quality:</strong> We uphold the highest standards in every
-              product we supply.
-            </li>
-            <li>
-              <strong>Integrity:</strong> We operate with honesty, transparency,
-              and accountability.
-            </li>
-            <li>
-              <strong>Customer Focus:</strong> Our clients are at the center of
-              everything we do.
-            </li>
-            <li>
-              <strong>Sustainability:</strong> We promote environmentally
-              responsible and energy-efficient practices.
-            </li>
-            <li>
-              <strong>Reliability:</strong> Consistent delivery and dependable
-              partnerships are the foundation of our business.
-            </li>
-          </ul>
+            {guidingPrinciplesDropdownOpen && (
+              <div className="mt-4 space-y-8">
+                {/* Vision Section */}
+                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
+                  <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    Our Vision
+                  </h3>
+                  <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    To become the preferred supplier of construction materials
+                    in Ethiopia, recognized for our reliability, expertise, and
+                    commitment to sustainability.
+                  </p>
+                </div>
+
+                {/* Mission Section */}
+                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
+                  <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    Our Mission
+                  </h3>
+                  <p className="leading-relaxed text-xl md:text-2xl max-w-3xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    To supply high-quality construction materials while
+                    delivering exceptional customer service and building
+                    long-term relationships with our clients and partners.
+                  </p>
+                </div>
+
+                {/* Values Section */}
+                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 border border-gray-300/50 shadow-lg">
+                  <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    Our Values
+                  </h3>
+                  <ul className="list-disc list-inside space-y-4 text-lg md:text-xl font-semibold text-gray-800 drop-shadow-[0_1px_2px_rgba(255,255,255,0.9)]">
+                    <li>
+                      <strong>Quality:</strong> We uphold the highest standards
+                      in every product we supply.
+                    </li>
+                    <li>
+                      <strong>Integrity:</strong> We operate with honesty,
+                      transparency, and accountability.
+                    </li>
+                    <li>
+                      <strong>Customer Focus:</strong> Our clients are at the
+                      center of everything we do.
+                    </li>
+                    <li>
+                      <strong>Sustainability:</strong> We promote
+                      environmentally responsible and energy-efficient
+                      practices.
+                    </li>
+                    <li>
+                      <strong>Reliability:</strong> Consistent delivery and
+                      dependable partnerships are the foundation of our
+                      business.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
